@@ -63,6 +63,7 @@ CPPFLAGS      = -mmcu=$(MCU) -I. \
 			$(MMC_CONFIG) \
 			-D$(MCU_DEFINE) \
 			-DSERIAL_RX_0 \
+			-D__PROG_TYPES_COMPAT__ \
 			-mcall-prologues
 CXXFLAGS      = -fno-exceptions
 ASFLAGS       = -mmcu=$(MCU) -I. -x assembler-with-cpp
